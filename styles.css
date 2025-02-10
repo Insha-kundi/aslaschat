@@ -76,7 +76,7 @@ h2 span{
   
   .hero-section h1 {
     font-family: "Poppins", Sans-serif;
-    font-size: 54px;
+    font-size: 52px;
     font-weight: 800;
     color: var(--secondary-color);
     line-height: 0.93em;
@@ -92,8 +92,9 @@ h2 span{
 
     position: relative;
     color: var(--text-color);
-    font-size: 19px;
-    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     justify-content: center;
   }
@@ -146,7 +147,7 @@ h2 span{
 
   .slidesshow{
 
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
   }
 
@@ -208,7 +209,7 @@ h2 span{
   background-color: #E7FEEE;
   font-family: "Poppins", Sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 5px;
   fill: #40A75B;
@@ -236,7 +237,7 @@ h2 span{
   font-family: sans-serif;
   color: #1c1c1c;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0px 15px 15px 20px;
   cursor: pointer;
   border-left: 8px solid rgba(0, 0, 0, 0.137);
@@ -390,19 +391,24 @@ video.active {
   z-index: 1;
 }
 
-.ai-chatbot-content h3 {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: left;
-  color: #333;
+.ai-chatbot-content h4 {
+  font-size: 32px;
+  font-weight: 700;
+  /* text-align: left; */
+  color: var(--ancent-color);
 }
 
 .ai-chatbot-content p {
+  font-family: 'open sans' sans-serif;
   font-size: 16px;
-  color: #666;
   line-height: 1.5;
+  color: var(--ancent-color);
 }
 
+.mobile-chatbot-content-2{
+
+  display: none;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -410,9 +416,23 @@ video.active {
       flex-direction: column;
       text-align: center;
   }
+
+  .desktop-chatbot-content-2{
+
+    display: none; 
+
+  }
+
+  .mobile-chatbot-content-2{
+
+    display: block;
+
+  }
+
   .ai-chatbot-content, .ai-chatbot-video-container {
       max-width: 100%;
       text-align: center;
+      justify-content: center;
   }
   .ai-chatbot-video-container video {
       width: 100%;
@@ -623,7 +643,7 @@ video.active {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     margin-top: 1rem;
     justify-content:center;
   }
@@ -631,7 +651,7 @@ video.active {
   .pricing1{
 
     flex: 1;
-    min-width:  250px;
+    min-width:  240px;
 
     border: 2px solid var(--primary-color);
     border-radius: 30px;
@@ -645,17 +665,30 @@ video.active {
        font-size: 14x;
        color: var(--subtitle-background);
        background-color: var(--ancent-color);
-       padding: 10px 55px 10px 55px;
+       padding: 18px 55px 18px 55px;
        /* margin-top: 230px!imporktant; */
-       border-radius: 10px;
+       border-radius: 14px;
        text-decoration: none;
 
   }
 
 
+  .pricing-page-pricing-btn{
+
+    font-size: 14x;
+    color: var(--subtitle-background);
+    background-color: var(--ancent-color);
+    padding: 18px 75px 18px 75px;
+    /* margin-top: 230px!imporktant; */
+    border-radius: 14px;
+    text-decoration: none;
+
+}
+
+
   .pricing-benefits li{
 
-    padding-left: 15px;
+    /* padding-top: 15px; */
     color: #54595f;
     list-style: none;
     font-size: 14px;
@@ -690,7 +723,7 @@ video.active {
     color: var(--subtitle-background);
   }
 
-  .premium-pricing button{
+  .premium-pricing h3{
 
     background-color: var(--primary-color);
     color: var(--subtitle-background);
@@ -717,7 +750,7 @@ video.active {
   margin: 0 auto;
 }
 .faq-item {
-  border: 1px solid #d5d8dc5e;
+  border: 2px solid #D0D5DD66;
   margin-bottom: 1.5rem;
   background-color: #fff;
   overflow: hidden;
@@ -1109,7 +1142,7 @@ h2 span{
 
 }
 
-.pricing{
+.responsive-pricing{
 
   margin-top: 15rem;
 }

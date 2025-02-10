@@ -132,3 +132,7 @@ function toggleMenu() {
       sideMenu.style.left = "0"; // Open the menu
   }
 }
+
+
+
+
