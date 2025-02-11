@@ -62,15 +62,15 @@ h2 span{
 
 .hero-section{
 
-  height: 360px;
+  height: 450px;
   position: relative;
   align-items: center;
   justify-content: center;
   background-image: url(./images/undefined_image.png);
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: top;
   background-repeat: no-repeat;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
   
@@ -147,7 +147,7 @@ h2 span{
 
   .slidesshow{
 
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
   }
 
@@ -678,7 +678,7 @@ video.active {
     font-size: 14x;
     color: var(--subtitle-background);
     background-color: var(--ancent-color);
-    padding: 18px 75px 18px 75px;
+    padding: 18px 45px 18px 45px;
     /* margin-top: 230px!imporktant; */
     border-radius: 14px;
     text-decoration: none;
@@ -806,10 +806,22 @@ video.active {
 
 /* started the pricing page CSS */
 
+
+
+/* .pricing-page-hero{
+
+  background-image: url(./images/undefined_image.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+} */
+
+
 .pricing-page-hero h2{
 
      padding-top: 3rem;
   /* background: url(./images/hero-bg.jpg); */
+
 }
 
 .pricing-page-hero-btn{
@@ -1144,10 +1156,32 @@ h2 span{
 
 .responsive-pricing{
 
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 
 }
+
+
+@media only screen and (max-width: 670px) {
+
+  .hero-section{
+
+    /* height:500px; */
+
+  }
+
+  .hero-section h1 {
+
+    padding-top:3rem;
+    /* padding-bottom:3rem; */
+
+    font-size: 34px;
+    
+  }
+
+}
+
+
 /* mboile responsive toggle menu */
 
 /* update new menu  */
